@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yt-bat</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-left: 60px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+<h1>yt-bat</h1>
+
+<p>yt-bat is for downloading video or audio from <a href="https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md">many sites</a> without requiring the use of the command-line. It's for Windows and it's basically just a few very simple batch files that use <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a>.</p>
+
+<h2>Download and instructions</h2>
+
+<ul>
+    <li>Download <a href="https://github.com/yt-bat/yt-bat.github.io/releases/download/yt-bat/yt-bat.zip">yt-bat.zip</a> and extract it anywhere on your computer that doesn't require administrator permission to write to (for example, the desktop or downloads folder are OK, but not the Program Files folder) and open the <strong>yt-bat</strong> folder.</li>
+</ul>
+
+<img src="folder.png">
+
+<ul>
+    <li>Double-click on <strong>download.txt</strong> to open it in Notepad and paste in the URLs of the pages containing the video or audio you want to download. You can put multiple URLs on separate lines. Save the file with <strong>Ctrl + S</strong> or by clicking <strong>File > Save</strong>.</li>
+</ul>
+
+<img src="notepad.png">
+
+<ul>
+    <li>Double-click on <strong>run.bat</strong>. A command-line window will open, showing the status of the downloading files. The downloaded files will be in the <strong>downloaded</strong> folder.</li>
+</ul>
+
+<img src="finished.png">
+
+<h2>More options</h2>
+
+<p>Open the <strong>more</strong> folder and instead of <strong>run.bat</strong> you can run...</p>
+
+<ul>
+    <li><strong>audio.bat</strong>: Download just the audio in the best quality available</li>
+    <li><strong>mp3.bat</strong>: Download just the audio and re-encode it to MP3</li>
+    <li><strong>best.bat</strong>: Download video in the best quality available (which may not be MP4)</li>
+    <li><strong>date.bat</strong>: Prepend the upload date to the filename</li>
+    <li><strong>subs.bat</strong>: Download video and embed subtitles</li>
+</ul>
+
+<p>If you want, you can...</p>
+
+<ul>
+    <li>Move the <strong>.bat</strong> files out of the <strong>more</strong> folder and into the <strong>yt-bat</strong> folder or vice versa</li>
+    <li>Delete the ones you don't want</li>
+    <li>Edit them and create your own using Notepad and the <a href="https://github.com/yt-dlp/yt-dlp/blob/master/README.md">yt-dlp documentation</a></li>
+</ul>
+
+</body>
+</html>
